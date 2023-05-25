@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="code.css">
+    <link rel="stylesheet" href="./fontawesome-free-6.3.0-web/css/all.css">
+    <title>Web_Phần mềm</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo.png" alt="Logo">
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><button class="btn-login" id="login-button">Đăng nhập</button></li>
+                    <li><button class="btn-contact">Liên hệ</button></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <form id="login-form" action="" method="post">
+        <div class="logo-container">
+            <img src="avatar.jpg" alt="logo-from" class="logo-from">
+            <span class="user-type active" onclick="selectUserType(this)" onmouseover="highlightUserType(this)" onmouseout="unhighlightUserType(this)">Admin</span>
+            <span class="user-type" onclick="selectUserType(this)" onmouseover="highlightUserType(this)" onmouseout="unhighlightUserType(this)">Nhân viên</span>            
+        </div>
+        <input type="text" id="username" name="username" placeholder="Tên đăng nhập">
+        <input type="password" id="password" name="password" placeholder="Mật khẩu">
+        <a href="#" class="forgot-password">Quên mật khẩu?</a>
+        <div class="button-container">
+            <button type="submit" id="login-button1">Đăng nhập</button>
+            <button type="submit">Đăng ký</button>
+        </div>
+    </form>
+    
+    <script src="code.js"></script>
+</body>
+</html>
